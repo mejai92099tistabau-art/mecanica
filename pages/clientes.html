@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehículos y Citas - Taller Mecánico AutoPro</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header class="encabezado-principal">
+        <div class="logo">🔧 Taller Mecánico AutoPro</div>
+        <button id="btnCerrarSesion" class="btn-salir">Cerrar Sesión</button>
+    </header>
+
+    <nav class="menu-navegacion">
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="clientes.html" class="activo">Vehículos y Citas</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor-principal">
+        <main class="contenido-central">
+            <section class="formulario-registro">
+                <h2>Registrar Nuevo Ingreso de Vehículo</h2>
+                <form id="formVehiculo">
+                    <div class="grupo-input">
+                        <label for="cliente">Nombre del Cliente:</label>
+                        <input type="text" id="cliente" required placeholder="Ej: Carlos Mamani">
+                    </div>
+                    <div class="grupo-input">
+                        <label for="placa">Placa y Modelo:</label>
+                        <input type="text" id="placa" required placeholder="Ej: 4521-XYZ - Toyota Corolla">
+                    </div>
+                    <div class="grupo-input">
+                        <label for="falla">Servicio o Falla Reportada:</label>
+                        <input type="text" id="falla" required placeholder="Ej: Ruido en frenos delanteros">
+                    </div>
+                    <button type="submit" class="btn-primario">Registrar Vehículo</button>
+                </form>
+            </section>
+
+            <section class="lista-vehiculos">
+                <h3>Vehículos Registrados</h3>
+                <table class="tabla-datos">
+                    <thead>
+                        <tr>
+                            <th>Cliente</th>
+                            <th>Vehículo</th>
+                            <th>Detalle</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaCuerpo">
+                        <tr>
+                            <td>Juan Pérez</td>
+                            <td>3890-ABC - Nissan Sentra</td>
+                            <td>Cambio de aceite</td>
+                            <td>En proceso</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <aside class="barra-lateral">
+            <h3>Garantía de Servicio</h3>
+            <article class="aviso">
+                <h4>Respaldo Técnico</h4>
+                <p>Todos nuestros trabajos cuentan con 30 días de garantía.</p>
+            </article>
+        </aside>
+    </div>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Taller Mecánico AutoPro - Instituto Tecnológico Bolivia Mar</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

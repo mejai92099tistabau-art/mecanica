@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Taller Mecánico AutoPro</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="fondo-login">
+    <main class="contenedor-login">
+        <section class="caja-login">
+            <header>
+                <h1>🔧 Taller AutoPro</h1>
+                <p>Sistema de Gestión Mecánica</p>
+            </header>
+            
+            <form id="formLogin">
+                <div class="grupo-input">
+                    <label for="usuario">Usuario o Correo:</label>
+                    <input type="text" id="usuario" placeholder="Ej: admin@autopro.com">
+                </div>
+                
+                <div class="grupo-input">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" placeholder="Ingresa tu contraseña">
+                </div>
+
+                <p id="mensajeError" class="error-texto"></p>
+                
+                <button type="submit" class="btn-primario">Ingresar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* Adaptación para Tablets (hasta 900px) */
+@media (max-width: 900px) {
+    .contenedor-principal {
+        flex-direction: column;
+    }
+
+    .grid-resumen {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Adaptación para Celulares (hasta 600px) */
+@media (max-width: 600px) {
+    .encabezado-principal {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .menu-navegacion ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menu-navegacion a {
+        text-align: center;
+        border-bottom: 1px solid #475569;
+    }
+
+    .grid-resumen {
+        grid-template-columns: 1fr;
+    }
+
+    .tabla-datos {
+        display: block;
+        overflow-x: auto;
+    }
+}
